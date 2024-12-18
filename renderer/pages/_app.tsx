@@ -18,6 +18,8 @@ import "@mantine/charts/styles.css";
 import "../styles/globals.css";
 import "../styles/scrollbar.css";
 
+import { Gabriela, Noto_Sans } from "next/font/google";
+
 /*
  * Custom color palette based on the "Algal Fuel" color (#20bf6b)
  * The palette was generated using the Mantine color generator tool
@@ -38,11 +40,26 @@ const culinaGreen: MantineColorsTuple = [
   "#00964f",
 ];
 
+const headingFont = Gabriela({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const textFont = Noto_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 const theme = createTheme({
   primaryColor: "culinaGreen",
   colors: {
     culinaGreen,
   },
+  headings: {
+    fontFamily: headingFont.style.fontFamily,
+    fontWeight: "bold",
+  },
+  fontFamily: textFont.style.fontFamily,
 });
 
 const App = ({ Component, pageProps }: AppProps) => {

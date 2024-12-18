@@ -1,7 +1,16 @@
 import type { NextPage } from "next";
 import { getStaticPaths, makeStaticProperties } from "@/lib/getStatic";
-import { Button, Center, Grid, Group, Stack, Text, Title } from "@mantine/core";
-import { IconUserPlus } from "@tabler/icons-react";
+import {
+  Button,
+  Center,
+  Image,
+  Grid,
+  Group,
+  Stack,
+  Text,
+  Title,
+  Divider,
+} from "@mantine/core";
 import { useTranslation } from "next-i18next";
 import sendIPC from "utils/ipc/send";
 import { useRouter } from "next/router";
@@ -22,15 +31,15 @@ const WelcomePage: NextPage = () => {
   const renderRightCol = () => {
     return (
       <Center h={pageHeight} p="xl" maw={800}>
-        <Stack gap="xl">
-          <Title fw="bold">{t("welcome:title", { APP_NAME: APP_NAME })}</Title>
-          <Text>{t("welcome:description", { APP_NAME: APP_NAME })}</Text>
+        <Stack>
+          <Title>{t("setup:welcomeTitle", { APP_NAME: APP_NAME })}</Title>
+          <Text opacity={0.8}>
+            {t("setup:welcomeText", { APP_NAME: APP_NAME })}
+          </Text>
+          <Divider mt="lg" />
           <Group>
-            <Button
-              leftSection={<IconUserPlus />}
-              onClick={() => void router.push(`/${locale}/`)}
-            >
-              {t("profile:buttons.createProfile")}
+            <Button onClick={() => void router.push(`/${locale}/`)}>
+              {t("setup:welcomeButtonCTA", { APP_NAME: APP_NAME })}
             </Button>
             <Button variant="default" onClick={() => sendIPC("close-app")}>
               {t("closeApp")}
@@ -44,7 +53,11 @@ const WelcomePage: NextPage = () => {
   return (
     <OnlyControlsLayout>
       <Grid gutter={0}>
-        <Grid.Col span={6}></Grid.Col>
+        <Grid.Col span={6}>
+          <Center h={pageHeight} px="xl">
+            <Image src="/images/kitchen.jpeg" alt="" radius="xl" h="66%" />
+          </Center>
+        </Grid.Col>
         <Grid.Col span="auto">{renderRightCol()}</Grid.Col>
       </Grid>
     </OnlyControlsLayout>
@@ -53,6 +66,6 @@ const WelcomePage: NextPage = () => {
 
 export default WelcomePage;
 
-export const getStaticProps = makeStaticProperties(["common", "welcome"]);
+export const getStaticProps = makeStaticProperties(["common", "setup"]);
 
 export { getStaticPaths };

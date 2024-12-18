@@ -73,7 +73,7 @@ const SettingsLayout = ({ children, route }: SettingsLayoutProps) => {
             />
           ))}
         </Grid.Col>
-        <Grid.Col span="auto" px="xs">
+        <Grid.Col span="auto" px="lg" maw={900}>
           {children}
         </Grid.Col>
       </Grid>
