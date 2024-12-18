@@ -1,0 +1,39 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.words": [
+    "Autosize",
+    "dartsmate",
+    "derechtenap",
+    "Deres",
+    "dexie",
+    "Dexie",
+    "embla",
+    "esnext",
+    "mantine",
+    "Marston",
+    "nextron",
+    "resizer",
+    "Resizer",
+    "tabler",
+    "toastify",
+    "WEBP"
+  ],
+  "cSpell.language": "de, en"
+}
