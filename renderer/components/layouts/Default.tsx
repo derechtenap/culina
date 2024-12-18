@@ -192,6 +192,7 @@ const DefaultLayout = ({
       </AppShell.Navbar>
       <AppShell.Main>
         <Container
+          fluid
           px={{
             xs: 0,
           }}

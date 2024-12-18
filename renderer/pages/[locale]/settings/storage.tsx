@@ -116,10 +116,18 @@ const storagePage = () => {
           <Stack>
             <Title fz="h3">{t("settings:storage.dangerZoneTitle")}</Title>
             <Text mb="lg">{t("settings:storage.dangerZoneText")}</Text>
-            <Button variant="filled" onClick={() => handleDeleteAllProfiles()}>
+            <Button
+              color="red"
+              variant="filled"
+              onClick={() => handleDeleteAllProfiles()}
+            >
               {t("settings:storage.dangerZone.btn.label.deleteAllProfiles")}
             </Button>
-            <Button variant="filled" onClick={() => handleResetApp()}>
+            <Button
+              color="red"
+              variant="filled"
+              onClick={() => handleResetApp()}
+            >
               {t("settings:storage.dangerZone.btn.label.resetApp")}
             </Button>
           </Stack>
