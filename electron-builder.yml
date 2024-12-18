@@ -1,6 +1,6 @@
-appId: com.app.dartsmate
-productName: DartsMate
-copyright: Copyright © 2022-2024 DartsMate Contributors
+appId: com.app.culina
+productName: Culina
+copyright: Copyright © 2022-2024 Culina Contributors
 directories:
   output: dist
   buildResources: resources

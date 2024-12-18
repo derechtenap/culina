@@ -1,12 +1,12 @@
 {
   "private": true,
-  "name": "dartsmate",
-  "productName": "DartsMate",
+  "name": "culina",
+  "productName": "Culina",
   "description": "Analyze, track and compare your dart games.",
   "version": "0.2.1",
-  "author": "DartsMate Contributors",
+  "author": "Culina Contributors",
   "main": "app/background.js",
-  "repository": "https://github.com/derechtenap/dartsmate",
+  "repository": "https://github.com/derechtenap/culina",
   "scripts": {
     "dev": "nextron",
     "build": "nextron build",

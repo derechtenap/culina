@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **App & OS information**
 - OS [e.g. Windows]
-- DartsMate version [e.g. 0.1.0]
+- Culina version [e.g. 0.1.0]
 
 **Additional context**
 Add any other context about the problem here.
