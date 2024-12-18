@@ -9,11 +9,7 @@
   "minimizeApp": "Minimieren",
   "fullscreenMode": "Vollbild",
   "windowedMode": "Fenstermodus",
-  "player": "Spieler",
-  "player_plural": "Spieler",
   "date": "Datum",
-  "match": "Spiel",
-  "match_plural": "Spiele",
   "networkStatus": {
     "text": "Netzwerk-Status",
     "online": "Verbunden",
@@ -22,28 +18,7 @@
   "closeApp": "Schließen",
   "routes": {
     "home": "Startseite",
-    "newMatch": "Neues Spiel",
-    "practice": "Übung",
-    "history": "Spielverlauf",
-    "profile": "Profil",
-    "statistics": "Statistiken",
     "settings": "Einstellungen"
-  },
-  "stats": {
-    "darts": "Darts",
-    "180s": "180er",
-    "matches": "Spiele",
-    "trainings": "Trainings",
-    "avg": "Durchschnitt",
-    "firstNineAvg": "Ersten 9 Darts-Durchschnitt",
-    "dartsThrown": "Darts geworfen",
-    "highestScore": "Höchste Aufnahme",
-    "scoreLeft": "Restpunktzahl",
-    "singles": "Singles",
-    "doubles": "Doubles",
-    "triples": "Triples",
-    "missed": "Nicht getroffen",
-    "rounds": "Runden"
   },
   "color": {
     "blue": "Blau",
@@ -88,5 +63,5 @@
     "title": "Oops! Es scheint, als gäbe es momentan keine Daten zum Anzeigen."
   },
   "greetingText": "Hallo, {{FIRST_NAME}}!",
-  "greetingSubtext": "Lass uns eine Runde Darts spielen."
+  "greetingSubtext": ""
 }

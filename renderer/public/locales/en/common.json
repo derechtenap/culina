@@ -9,11 +9,7 @@
   "minimizeApp": "Minimize",
   "fullscreenMode": "Fullscreen",
   "windowedMode": "Windowed Mode",
-  "player": "Player",
-  "player_plural": "Players",
   "date": "Date",
-  "match": "Match",
-  "match_plural": "Matches",
   "networkStatus": {
     "text": "Network Status",
     "online": "Online",
@@ -28,22 +24,6 @@
     "profile": "Profile",
     "statistics": "Statistics",
     "settings": "Settings"
-  },
-  "stats": {
-    "darts": "Darts",
-    "180s": "180s",
-    "matches": "Matches",
-    "trainings": "Trainings",
-    "avg": "Average",
-    "firstNineAvg": "First 9 Average",
-    "dartsThrown": "Darts Thrown",
-    "highestScore": "Highest Score",
-    "scoreLeft": "Score Left",
-    "singles": "Singles",
-    "doubles": "Doubles",
-    "triples": "Triples",
-    "missed": "Missed",
-    "rounds": "Rounds"
   },
   "color": {
     "blue": "Blue",
@@ -88,5 +68,5 @@
     "title": "Oops! It seems like there's no data to display at the moment."
   },
   "greetingText": "Hello, {{FIRST_NAME}}!",
-  "greetingSubtext": "Let's play a game of darts."
+  "greetingSubtext": ""
 }

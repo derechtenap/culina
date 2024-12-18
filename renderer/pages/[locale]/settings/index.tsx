@@ -3,7 +3,6 @@ import { getStaticPaths, makeStaticProperties } from "@/lib/getStatic";
 import { Button, Group, Stack, Text, Title } from "@mantine/core";
 import SettingsLayout from "@/components/layouts/SettingsLayout";
 
-import ProfileAvatar from "@/components/content/ProfileAvatar";
 import getFormattedName from "utils/misc/getFormattedName";
 import { IconUserDown, IconUserEdit, IconUserMinus } from "@tabler/icons-react";
 import { modals } from "@mantine/modals";
@@ -57,7 +56,6 @@ const SettingsPage = () => {
             <Title>{t("routes.profile")}</Title>
             <Text>{t("settings:profile.text")}</Text>
             <Group>
-              <ProfileAvatar size="lg" profile={defaultProfile} />
               <Stack gap={0}>
                 <Text>{getFormattedName(defaultProfile.name)}</Text>
                 <Text fz="xs" c="dimmed">
@@ -96,10 +94,6 @@ const SettingsPage = () => {
 
 export default SettingsPage;
 
-export const getStaticProps = makeStaticProperties([
-  "common",
-  "profile",
-  "settings",
-]);
+export const getStaticProps = makeStaticProperties(["common", "settings"]);
 
 export { getStaticPaths };
